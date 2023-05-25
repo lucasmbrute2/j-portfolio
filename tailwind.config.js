@@ -35,6 +35,9 @@ module.exports = {
         'primary-background-color': '#1E1E1E',
         'secondary-background-color': '#FFFFFF',
       },
+      lineHeight: {
+        xl: '112px',
+      },
     },
   },
   plugins: [],
