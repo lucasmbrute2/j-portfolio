@@ -4,7 +4,10 @@ import { Qualifications } from './qualifications'
 
 export function AboutMeSection() {
   return (
-    <section className="block bg-gradient-to-b from-[#0f0e0e] to-[#0f172a] pt-16">
+    <section
+      id="aboutMe"
+      className="block bg-[#fffffff3] pb-5 pt-16 lg:min-h-[90vh]"
+    >
       <div className="mx-auto max-w-max-w-screen-1.5xl py-36 lg:py-0">
         <div className="flex flex-col items-center justify-between lg:flex-row">
           <ImageWindow
@@ -12,7 +15,7 @@ export function AboutMeSection() {
             height="h-[456px]"
             className="w-[350px] lg:w-[500px]"
           />
-          <div className="relative w-full px-4 text-center text-secondary lg:w-[504px] lg:px-0 lg:text-left">
+          <div className="relative w-full px-4 text-center text-primary lg:w-[504px] lg:px-0 lg:text-left">
             <h1 className=" text-[min(85px,10vw)] font-bold leading-[112px]">
               Sobre mim
             </h1>

@@ -2,18 +2,18 @@ import Image from 'next/image'
 import { ImgHTMLAttributes } from 'react'
 
 interface ImageWindowProps extends ImgHTMLAttributes<HTMLImageElement> {
-  width?: number
-  height?: number
+  width?: string
+  height?: string
 }
 
-export function ImageWindow({ height, width, ...props }: ImageWindowProps) {
+export function ImageWindow({ width, height, ...props }: ImageWindowProps) {
   return (
     <Image
       src={props.src as string}
       alt={props.alt as string}
-      className={props.className}
-      width={width}
-      height={height}
+      className={`${props.className} 
+      ${height ?? 'h-[134px]'}
+      ${width ?? 'w-[134px]'}  rounded-full`}
     />
   )
 }

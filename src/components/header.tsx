@@ -1,4 +1,4 @@
-const sections = ['home', 'sobre mim', 'resultados', 'contatos']
+const sections = ['home', 'sobre mim', 'resultados', 'contato']
 
 export default function Header() {
   return (

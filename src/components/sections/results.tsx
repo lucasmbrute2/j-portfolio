@@ -1,5 +1,8 @@
+import { ArrowDown } from 'lucide-react'
 import { Carousel } from '../carousel'
 import Image from 'next/image'
+import { Link } from 'react-scroll'
+import { poppins } from '@/app/layout'
 
 const profiles = [
   {
@@ -30,16 +33,25 @@ const profiles = [
 
 export function Results() {
   return (
-    <div className="bg-secondary-background-color pt-12">
-      <div className="ml-5 max-w-full lg:ml-28">
+    <section className="block bg-[#fffffff3] pt-12 ">
+      <div className="ml-5 flex max-w-full flex-col items-center justify-around lg:ml-28 lg:h-[1300px]">
         <h1
-          className={`text-center text-[min(85px,10vw)] font-bold leading-[112px] text-primary lg:text-start`}
+          className={`text-center text-[min(96px,10vw)] font-bold leading-[112px] text-primary lg:text-start`}
         >
           Resultados
+          <hr className="mx-auto my-[-15px] h-1 w-8 rounded border-0 bg-purple-700 lg:my-3 lg:w-24 " />
         </h1>
+        <Link
+          to="contactMe"
+          className={`${poppins.className} mt-10 flex cursor-pointer flex-col items-center justify-center gap-4 pb-5 text-lg`}
+          smooth
+        >
+          <p>Entre em contato!</p>
+          <ArrowDown className="animate-bounce" />
+        </Link>
 
-        <div className="flex max-w-full overflow-x-hidden">
-          <Carousel loop className="h-[700px]">
+        <div className="flex max-w-full  overflow-x-hidden">
+          <Carousel loop className=" h-[400px] lg:h-[900px]">
             {profiles.map(({ age, id, img, name }) => (
               <div
                 key={id}
@@ -50,8 +62,8 @@ export function Results() {
 
                   <div className="mt-10 flex items-center justify-center">
                     <div className="flex flex-col items-center justify-center">
-                      <p className="text-lg font-bold">{name},</p>
-                      <span>{age} anos</span>
+                      <p className="text-lg text-primary">{name},</p>
+                      <span className="text-primary">{age} anos</span>
                     </div>
                   </div>
                 </div>
@@ -60,6 +72,6 @@ export function Results() {
           </Carousel>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
