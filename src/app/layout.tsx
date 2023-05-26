@@ -9,13 +9,13 @@ const roboto = Roboto({
   variable: '--font-roboto',
 })
 
-export const poppins = Poppins({
+const poppins = Poppins({
   subsets: ['latin'],
   weight: '400',
   variable: '--font-poppins',
 })
 
-const metadata = {
+export const metadata = {
   title: 'Jonathan Rodrigues',
   description: 'Instrutor e personal Jonathan Rodrigues',
 }
@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body
-        className={`${roboto.className} h-screen bg-primary-background-color`}
+        className={`${roboto.className} ${poppins.variable} h-screen bg-primary-background-color`}
       >
         <Header />
         {children}

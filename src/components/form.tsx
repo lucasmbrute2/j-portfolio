@@ -4,7 +4,6 @@ import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import * as z from 'zod'
 import { FormHTMLAttributes } from 'react'
-import { poppins } from '@/app/layout'
 
 const contactMeSchema = z.object({
   name: z.string(),
@@ -28,7 +27,7 @@ export function ContactMeForm({ ...rest }: FormProps) {
     <form {...rest}>
       <div>
         <label
-          className={`${poppins.className} mb-3 block text-secondary`}
+          className={` mb-3 block font-poppins text-secondary`}
           htmlFor="name"
         >
           Nome
@@ -44,7 +43,7 @@ export function ContactMeForm({ ...rest }: FormProps) {
       </div>
       <div>
         <label
-          className={`${poppins.className} mb-3 block text-secondary`}
+          className={` mb-3 block font-poppins text-secondary`}
           htmlFor="email"
         >
           Email
@@ -60,7 +59,7 @@ export function ContactMeForm({ ...rest }: FormProps) {
       </div>
       <div>
         <label
-          className={`${poppins.className} mb-3 block text-secondary`}
+          className={` mb-3 block font-poppins text-secondary`}
           htmlFor="phone"
         >
           Telefone
@@ -76,7 +75,7 @@ export function ContactMeForm({ ...rest }: FormProps) {
       </div>
 
       <button
-        className={`${poppins.className}  mx-auto my-5 block w-full max-w-[437px] rounded-sm border-none bg-cta-button p-2 text-center text-secondary hover:text-gray-100 lg:my-[60px] lg:text-xl`}
+        className={` mx-auto my-5 block w-full max-w-[437px] rounded-sm border-none bg-cta-button p-2 text-center font-poppins text-secondary hover:text-gray-100 lg:my-[60px] lg:text-xl`}
       >
         Quero entrar em contato
       </button>

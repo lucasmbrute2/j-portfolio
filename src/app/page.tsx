@@ -1,7 +1,6 @@
 'use client'
 
 import { CtaButton } from '@/components/cta-button'
-import { poppins } from './layout'
 import { AboutMeSection } from '@/components/sections/about-me'
 import { Results } from '@/components/sections/results'
 import { ContactMe } from '@/components/sections/contact-me'
@@ -17,14 +16,14 @@ export default function Home() {
           Jonathan Rodrigues
         </h1>
         <h2
-          className={`${poppins.className} my-4leading-8  mb-2 text-[min(30px,6vw)] text-secondary`}
+          className={`my-4leading-8 mb-2  font-poppins text-[min(30px,6vw)] text-secondary`}
         >
           Encontre sua força,<span className="block text-[18px]">Personal</span>
         </h2>
 
         <Link to="contactMe" smooth>
           <CtaButton
-            className={`${poppins.className} my-[65px] w-[300px] rounded bg-[#388ee4] p-4 text-center text-[min(36px,6vw)] font-normal leading-10 text-gray-200 hover:text-gray-50 lg:h-[78px] lg:w-[355px]`}
+            className={`  my-[65px] w-[300px] rounded bg-[#388ee4] p-4 text-center font-poppins text-[min(36px,6vw)] font-normal leading-10 text-gray-200 hover:text-gray-50 lg:h-[78px] lg:w-[355px]`}
           >
             tenho interesse
           </CtaButton>

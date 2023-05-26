@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: 'var(--font-roboto)',
+        poppins: ['var(--font-poppins)'],
       },
       maxWidth: {
         'max-w-screen-1.5xl': '1444px',

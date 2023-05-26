@@ -2,7 +2,6 @@ import { ArrowDown } from 'lucide-react'
 import { Carousel } from '../carousel'
 import Image from 'next/image'
 import { Link } from 'react-scroll'
-import { poppins } from '@/app/layout'
 
 const profiles = [
   {
@@ -43,7 +42,7 @@ export function Results() {
         </h1>
         <Link
           to="contactMe"
-          className={`${poppins.className} mt-10 flex cursor-pointer flex-col items-center justify-center gap-4 pb-5 text-lg`}
+          className={` mt-10 flex cursor-pointer flex-col items-center justify-center gap-4 pb-5 font-poppins text-lg`}
           smooth
         >
           <p>Entre em contato!</p>

@@ -4,14 +4,13 @@ import tecnicaBrutalidade from '../../assets/tecnica-brutalidade.svg'
 import gluteos from '../../assets/glúteos.svg'
 import treinamentoForca from '../../assets/treinamento-forca.svg'
 import { Carousel } from '../carousel'
-import { poppins } from '@/app/layout'
 import { GraduationCap } from 'lucide-react'
 
 export function Qualifications() {
   return (
     <div className="relative px-5 pt-[15rem]  lg:mb-14">
       <h2
-        className={`${poppins.className} mb-5 flex justify-center gap-4 text-center text-[33px] font-bold lg:justify-normal`}
+        className={` mb-5 flex justify-center gap-4 text-center font-poppins text-[33px] font-bold lg:justify-normal`}
       >
         Certificados <GraduationCap size={32} />
       </h2>
