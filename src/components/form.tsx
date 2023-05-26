@@ -18,8 +18,6 @@ interface FormProps extends FormHTMLAttributes<HTMLFormElement> {}
 
 export function ContactMeForm({ ...rest }: FormProps) {
   const {
-    handleSubmit,
-    reset,
     register,
     formState: { errors },
   } = useForm<ContactMeInputs>({

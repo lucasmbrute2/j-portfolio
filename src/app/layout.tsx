@@ -15,9 +15,9 @@ export const poppins = Poppins({
   variable: '--font-poppins',
 })
 
-export const metadata = {
+const metadata = {
   title: 'Jonathan Rodrigues',
-  description: 'Instrutor e personal Jpnathan Rodrigues',
+  description: 'Instrutor e personal Jonathan Rodrigues',
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
